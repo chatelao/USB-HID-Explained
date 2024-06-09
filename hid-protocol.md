@@ -1,6 +1,6 @@
 
 | Hex |  Field  | Value |
-| --- | --- | --- |
+| --- | --- | ---:|
 | 0x05, 0x01 |  Usage Page  | Generic Desktop Ctrls |
 | 0x09, 0x05 |  Usage  | Game Pad |
 | 0xA1, 0x01 |  Collection  | Application |
@@ -12,4 +12,14 @@
 | 0x25, 0x01 |  Logical Maximum  | 1 |
 | 0x75, 0x01 |  Report Size  | 1 |
 | 0x95, 0x10 |  Report Count  | 16 |
-| 0x81, 0x02 |  Input  | Data,Var,Abs,No Wrap,Linear,Preferred 
+| 0x81, 0x02 |  Input  | Data,...,Preferred |
+| 0x05, 0x01 | Usage Page | Generic Desktop Ctrls | 
+| 0x15, 0x81 | Logical Minimum | -127 | 
+| 0x25, 0x7F | Logical Maximum | 127 | 
+| 0x09, 0x30 | Usage | X | 
+| 0x09, 0x31 | Usage | Y | 
+| 0x09, 0x32 | Usage | Z | 
+| 0x09, 0x35 | Usage | Rz | 
+| 0x75, 0x08 | Report Size | 8 | 
+| 0x95, 0x04 | Report Count | 4 | 
+| 0x81, 0x02 | Input | Data,...,No Null Position | 
